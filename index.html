@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,33 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="normal-case">
+   
     
-<header></header>
-<main></main>
+<header class="container mx-auto">
+    <div class="navbar bg-base-100 my-8 ">
+        
+        <div class="navbar-start">
+          <img src="Logo.png">
+        </div>
+        <div class="navbar-center">
+           
+           <button class=" btn normal-case btn-active"> Sort By View</button>
+        </div>
+        <div class="navbar-end">
+            <button class="btn normal-case btn-error">Blog</button>
+         
+         
+        </div>
+      </div>
+      <hr class="">
+</header>
+<main class="mt-4 ml-[500px]">
+    <button class="btn normal-case">All</button>
+    <button class="btn normal-case">Music</button>
+    <button class="btn normal-case">Comedy</button>
+    <button class="btn normal-case">Drawings</button>
+</main>
 <footer></footer>
 <script src="script.js"></script>
 </body>
