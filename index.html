@@ -6,9 +6,17 @@
     <title>PH TUBE</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 
 
 </head>
+<style>
+    .btn{
+        margin-right: 4px;
+    }
+   
+</style>
 <body >
    
     
@@ -16,30 +24,32 @@
     <div class="navbar bg-base-100 my-8 ">
         
         <div class="navbar-start">
-          <img src="Logo.png">
-          <i class="fa-solid fa-badge-check"></i>
+          <img src="Logo.png" >
+         
         </div>
-        <div class="navbar-center">
+        <div class="navbar-center" id="nav-btn">
            
-           <button class=" btn normal-case btn-active"> Sort By View</button>
+          
         </div>
         <div class="navbar-end">
-            <button class="btn normal-case btn-error">Blog</button>
-         
+            <a class="btn normal-case btn-error " href="blog.html">Blog</a>
+          
          
         </div>
       </div>
+      
       <hr class="">
 </header>
 <main class="mt-4" >
-   <section class="ml-[500px] " id="button-container">
-    <i class="fa-solid fa-badge-check"></i>
+   <section class="ml-[50px] md:ml-[220px] lg:ml-[500px] gap-4" id="button-container">
+   
    </section>
-   <section class="container mx-auto grid  grid-cols-2 lg:grid-cols-4 gap-4 mt-14" id="card-container">
+   <section class="container gap-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mt-14" id="card-container">
    
    </section>
    <section>
     <div id="no-container"></div>
+   
    </section>
 </main>
 <footer></footer>
