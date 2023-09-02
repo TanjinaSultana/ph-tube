@@ -5,11 +5,9 @@ const buttonCategory = async () => {
     const buttonContainer =document.getElementById("button-container");
     
     data.data.forEach(category => {
-       //console.log(category.category_id)
         const button = document.createElement("button");
         button.classList.add(".btn");
-        button.innerHTML = `
-        <button onclick="loadNews('${category.category_id}')" class="btn normal-case btn-active gap-2">${category.category}</button>`;
+         button.innerHTML = `<button onclick="loadNews('${category.category_id}')" class="btn normal-case btn-active gap-2">${category.category}</button>`
         buttonContainer.appendChild(button);
         
        
@@ -75,13 +73,16 @@ const loadNews = async (categoryId) => {
     
     }
    
+
           
 
 }
-const sortButton = () => {
+
     const navBtn = document.getElementById("nav-btn");
     const div = document.createElement("div");
-    div.innerHTML =  ` <button class=" btn normal-case btn-active ml-8 lg:ml-0 md:ml-0"> Sort By View</button>`
+    div.innerHTML =  ` <button onclick ="" class=" btn normal-case btn-active ml-8 lg:ml-0 md:ml-0"> Sort By View</button>`
     navBtn.appendChild(div)
-}
+
+
 buttonCategory();
+loadNews(1000);
